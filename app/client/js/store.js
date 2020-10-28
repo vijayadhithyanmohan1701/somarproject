@@ -6,7 +6,6 @@ Vue.use(Vuex);
 
 console.log(process.env);
 
-
 export default new Vuex.Store({
   state: {
     error: false,
@@ -26,7 +25,7 @@ export default new Vuex.Store({
   actions: {
     fetchParks({ commit }) {
       return new Promise((resolve, reject) => {
-        axios.get(`api/v1/Doggo-Model-Park.json`)
+        axios.get(`api/v1/Doggo-Model-NewPark.json`)
           .then((response) => {
             commit('updateParks', response.data.items);
             commit('clearError');

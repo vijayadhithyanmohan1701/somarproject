@@ -61,4 +61,15 @@ You will need to use a node version 10.* of node to install node_modules
 ##### SilverStripe API
 The parks data is being served using [SilverStripe's built in restful server](https://github.com/silverstripe/silverstripe-restfulserver). The api pattern is /api/v1/(ClassName)/(ID).
 ##### Image upload API endpoint
-You will need to create a new route and controller to handle uploading images to the server as the SilverStripe Restful Server module does not currently handle saving relations.  
+You will need to create a new route and controller to handle uploading images to the server as the SilverStripe Restful Server module does not currently handle saving relations.
+
+##### SOMAR TECHNICAL TEST STATUS ####
+1. I have completed the test. The geoJSON data is imported in a new table NewParks using a new Model created. 
+2. The co-ordinates of the map are updated
+3. I have created an upload field on the panel that shows park details. The files will be uploaded and saved to the database.
+4. I have created a ModelAdmin to manage NewParks and the associated images.
+5. The images will need approval. There is a checkbox 'Show Image' which must be toggled on to show images on the front-end. This is just to avoid some questionable images.
+6. I used a simple upload field that triggers a POST call using Vue and saves data using a DataObject created
+
+*********** Tasks to be done for improvisation ***********
+1. The upload field will show the absolute URL in a text field. I ran out of time to improvise this and show the uploaded image as a preview.

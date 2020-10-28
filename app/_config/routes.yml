@@ -1,0 +1,7 @@
+---
+Name: approutes
+After: framework/_config/routes#coreroutes
+---
+Silverstripe\Control\Director:
+  rules:
+    'api/v1/uploadimage//$Action/$ID/$Name' : 'NewParkImageUploadController'

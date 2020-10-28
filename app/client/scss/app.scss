@@ -44,3 +44,15 @@ main {
   flex: 0 0 500px;
   z-index: 200;
 }
+.image-uploads{
+  display: flex;
+  flex-wrap: wrap;
+  list-style:none;
+}
+.image-uploads li{
+  flex-grow: 1;
+  width: 33%;
+  margin: 2px;
+  padding: 50px;
+  border: 1px solid #ccc;
+}

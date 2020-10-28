@@ -40,7 +40,7 @@ export default {
       error: false,
       isLoading: true,
       mapboxOptions: {
-        center: [174.87, -41.234],
+        center: [175.608215, -40.352306],
         maxBounds: [
           [165.01859929057042, -47.54977421666661],
           [179.88384589789575, -34.00011395368569],
@@ -58,7 +58,7 @@ export default {
         globalMap.resize();
         if (newVal.name === 'home') {
           globalMap.flyTo({
-            center: [174.87, -41.234],
+            center: [175.608215, -40.352306],
             zoom: 11,
           });
         } else if (newVal.name === 'park') {
